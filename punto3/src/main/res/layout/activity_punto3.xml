@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.practica2.julianalmanza.punto3.Punto3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:textSize="30sp"
+        android:text="Area"
+        android:layout_gravity="center"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimension2"
+        android:orientation="vertical"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CUADRADO"
+            android:id="@+id/cuadrado"
+            android:textSize="25sp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRIANGULO"
+            android:id="@+id/triangulo"
+            android:textSize="25sp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECTANGULO"
+            android:id="@+id/rectangulo"
+            android:textSize="25sp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CIRCULO"
+            android:id="@+id/circulo"
+            android:textSize="25sp"
+            />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/laycua"
+            android:gravity="center"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ladocua"
+                android:hint="@string/ladocua"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:textSize="17sp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/laytrian"
+            android:gravity="center"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/basetrian"
+                android:id="@+id/basetrian"
+                android:inputType="number"
+                android:textSize="17sp"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturatrian"
+                android:inputType="number"
+                android:textSize="17sp"
+                android:hint="@string/alturatrian"
+                android:layout_gravity="center"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/layrectan"
+            android:gravity="center"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/baserectan"
+                android:id="@+id/baserectan"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/alturarectan"
+                android:id="@+id/alturarectan"
+                android:textSize="16sp"
+                android:inputType="number"
+                android:layout_gravity="center"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/laycir"
+            android:gravity="center"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocir"
+                android:id="@+id/radiocir"
+                android:textSize="17sp"
+                android:inputType="number"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80sp"
+        android:layout_gravity="center"
+        android:text="CALCULAR AREA"
+        android:id="@+id/calcular"
+        android:textSize="30sp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:textSize="20sp"
+        android:hint="@string/resultado"
+        android:gravity="center"
+        android:id="@+id/resultado"
+
+        />
+
+
+
+</LinearLayout>

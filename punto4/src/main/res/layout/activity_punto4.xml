@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.practica2.julianalmanza.punto4.Punto4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="447dp"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Formulario De Registro"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loggin"
+                android:textSize="17sp"
+                android:layout_marginTop="18sp"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/loggin"
+                android:id="@+id/loggin"
+                android:textSize="20sp"
+                android:inputType="textPersonName"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_marginTop="15sp"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:textSize="20sp"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repita Password"
+                android:textSize="17sp"
+                android:layout_marginTop="15sp"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/conpassword"
+                android:textSize="20sp"
+                android:id="@+id/conpassword"
+                android:inputType="textPassword"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo Electronico"
+                android:textSize="17sp"
+                android:layout_marginTop="15sp"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/correo"
+                android:textSize="20sp"
+                android:id="@+id/correo"
+                android:inputType="textPassword"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexo"
+                android:textSize="21sp"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/black"
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:textSize="18sp"
+                    android:id="@+id/masculino"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino"
+                    android:textSize="18sp"
+                    android:id="@+id/femenino"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha De Nacimiento"
+                android:layout_marginTop="23sp"
+                android:textSize="21sp"
+                android:textColor="@color/black"
+                />
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:id="@+id/date"
+                >
+
+            </DatePicker>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ciudad De Nacimiento"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="18sp"
+                />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:layout_marginTop="10sp"
+                >
+
+            </Spinner>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pasatiempos"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="33sp"
+                />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                >
+
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deportes"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:checked="false"
+                    android:id="@+id/deporte"
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Videojuegos"
+                    android:textSize="18sp"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:checked="false"
+                    android:textColor="@color/black"
+                    android:id="@+id/videojuegos"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arte"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_column="0"
+                    android:checked="false"
+                    android:layout_row="1"
+                    android:id="@+id/arte"
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Literatura"
+                    android:textSize="18sp"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:checked="false"
+                    android:textColor="@color/black"
+                    android:id="@+id/literatura"
+                    />
+
+            </GridLayout>
+
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aceptar"
+                android:id="@+id/aceptar"
+                android:textSize="30sp"
+                android:layout_marginTop="35sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/mostrar"
+                android:layout_marginTop="30sp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Punto4</string>
+    <string name="loggin">Ingrese Su Nombre</string>
+    <string name="password">Ingrese La Contraseña</string>
+    <string name="conpassword">Confirme La Contraseña</string>
+    <string name="correo">Correo electronico</string>
+    <string name="ciudad">Ciudad De Nacimiento</string>
+
+    <string-array name="ciudades">
+        <item>Medellin</item>
+        <item>Barranquilla</item>
+        <item>Bogota</item>
+        <item>Cali</item>
+        <item>Cartagena</item>
+        <item>Bucaramanga</item>
+        <item>Putumayo</item>
+        <item>Santa Marta</item>
+
+    </string-array>
+</resources>

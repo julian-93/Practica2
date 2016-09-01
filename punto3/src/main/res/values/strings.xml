@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Punto3</string>
+    <string name="ladocua">Lado DelCuadrado</string>
+    <string name="basetrian">Base Del Triangulo</string>
+    <string name="alturatrian">Altura Del Triangulo</string>
+    <string name="baserectan">Base Del Rectangulo</string>
+    <string name="alturarectan">Altura Del Rectangulo</string>
+    <string name="radiocir">Radio Del Circulo</string>
+    <string name="resultado">RESULTADO</string>
+</resources>
